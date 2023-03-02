@@ -1,0 +1,56 @@
+.row {
+    --bs-gutter-x: none !important;}
+
+
+
+    
+.textheading{
+    color: #8e8e8e !important;
+    
+}    
+
+
+a{
+    text-decoration: none;
+    color: #8e8e8e !important;
+
+}
+
+a:hover{
+
+    color: #4C259F !important;
+}
+
+
+.footertext{
+    color: #8e8e8e !important;
+}
+.footertext:hover{
+    
+    color: #4C259F !important;
+}
+
+
+@media only screen and (min-device-width : 320px)and (max-device-width : 425px) {
+
+    // .navbar-brand{
+    //     justify-content: center;
+
+    // }
+    // .textheading{
+    //     justify-content: center;
+    // }
+
+    // .fs-5{
+    //     text-align: center;
+    // }
+
+    // .fs-6{
+    //     text-align: center;
+    // }
+
+    .footerCenter{
+        display: flex;
+        justify-content: center;
+    }
+}

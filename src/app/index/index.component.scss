@@ -1,0 +1,1077 @@
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+@import 'swiper/css/autoplay';
+
+.herosSecBgImg {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: auto;
+}
+
+
+
+
+// video
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  // position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -3;
+  position: absolute;
+  opacity: 0.6;
+}
+
+
+
+.herosSecText {
+  font-size: 3em;
+  font-weight: 600;
+  word-wrap: break-word;
+
+}
+
+.herosBtn {
+  background-color: #4c259f;
+  color: white;
+  font-weight: 100 !important;
+  font-size: 1.20em;
+  // padding: 0.3em 2em 0.3em 2em;
+  width:9.2em;
+  border-radius: 2px;
+  padding: 0.3em !important;
+  white-space: nowrap;
+}
+
+.herosBtn:hover {
+  // background-color: red; 
+  // background-image: linear-gradient(to bottom left,  #4c259f, #a481ef);
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+  // background-image: linear-gradient(to right, #a481ef 0%, #4c259f 65%);
+
+
+
+table {
+  width: 100%;
+}
+
+.headBlue {
+  color: #122362;
+  word-wrap: break-word;
+  font-weight: 900;
+  font-size: 2.4em;
+}
+
+.textBlue {
+  color: #4C259F;
+  font-weight: 500;
+}
+
+.textLightBlue {
+  color: #1D4ED8;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.tableDate {
+  font-size: 15px;
+  color: #667085;
+}
+
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+  background-color: #4C259F;
+  // border-radius: 10px;
+}
+
+
+.secBgImg {
+  background-image: url('./../../assets/Home_page_img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  // position: sticky !important;
+}
+
+.borderRight {
+  border-left: 1px solid white;
+}
+
+.secTwoSteps{
+  display: flex;
+}
+.secTwo {
+  margin: 0 20px 19px;
+}
+
+::ng-deep.th.mat-header-cell {
+  border-bottom-width: 0px solid white;
+  border-bottom-style: solid;
+}
+
+.hrsecUpcoming {
+ 
+  color: #4C259F;
+  align-items: center;
+}
+
+.secBgImgSec2column1 {
+  background-image: url('./../../assets/Home_Page_Img2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.sec2HeadText1column1 {
+  font-weight: 400;
+  font-size: 2em;
+  word-wrap: break-word;
+}
+
+.sec2HeadText2column1 {
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.sec2Stepcolumn1 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.sec2StepHeadcolumn1 {
+  font-size: 20px;
+}
+
+.sec2Column1Para {
+  line-height: 1.8;
+  font-size: 14.4px;
+  padding: 0em 2em 0em 3.9em;
+
+}
+
+.sec2Column1Para2 {
+  line-height: 1.8;
+  font-size: 14.4px;
+  padding: 0em 2em 0em 5em;
+
+}
+
+.hrsec2 {
+  color: #69C1F6;
+  height: 1px;
+  opacity: 1.5;
+}
+
+.sec2BgCLrcolumn2 {
+  background-color: #F5F5F5;
+}
+
+
+.tablesec2 {
+  width: 50%;
+
+}
+
+.sec3BgImg {
+  background-image: url(./../../assets/Home_page_img4.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.sec3HeadText {
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 1.5;
+  word-wrap: break-word;
+
+}
+
+.sec3Icon1 {
+  background-color: #D9D9D933;
+  border-radius: 50%;
+  // width: 25%;
+  padding: 15px 22px 15px 22px;
+}
+
+.sec3Icon2 {
+  background-color: #D9D9D933;
+  border-radius: 50%;
+  // width: 25%;
+  padding: 17px 22px 17px 22px;
+}
+
+.sec3Icon3 {
+  background-color: #D9D9D933;
+  border-radius: 50%;
+  // width: 27%;
+  padding: 19px 19px 19px 19px;
+}
+
+.sec3PointText {
+  font-size: 1.7em;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.popularCorusesText1 {
+  font-size: 3.4em;
+  word-wrap: break-word;
+}
+
+.popularCorusesText2 {
+  word-wrap: break-word;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.courseBoxImg {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.CourseBoxBgClr {
+  background-color: rgb(250, 247, 247);
+  padding: 2em 3em 2em 3em;
+  height: 100%;
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+
+}
+
+.CourseBoxBgClr:hover {
+  background-color: rgb(108, 29, 235);
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+  color: white !important;
+  margin-top: -15px;
+  transition: all ease 0.8s;
+}
+
+
+.courseBoxPara {
+  // padding:0em 1em 0em 1em;
+  font-size: 1.2em;
+  // text-align: justify;
+  min-height: 130px;
+  max-height: 130px;
+
+
+}
+
+.courseBoxPara2 {
+  font-size: 1.2em;
+  text-align: initial;
+}
+
+
+.courseIcons {
+  width: 50px !important;
+}
+
+// .courseIconSec {
+//   // padding: 3em 3em 3em 2em;
+// }
+
+.courseBoxIcon {
+  color: black;
+  background-color: black;
+}
+
+.courseViewText {
+  color: blueviolet;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-right: 30px;
+  text-align: flex-start;
+
+}
+
+
+.CourseBoxBgClr:hover .courseViewText {
+  color: #FFFFFF;
+  font-size: 17px;
+  text-decoration: none;
+  margin-right: 30px;
+
+
+}
+
+.viewAllBtn1 {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.viewAllBtn {
+  width: 7em;
+  background-color: #4c259f;
+  color: white !important;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 2px;
+}
+.viewAllBtn:hover{
+  background-color: rgb(108, 29, 235);
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+
+.addToCartBtn {
+  background-color: #4C259F;
+  color: white;
+  // padding: 0.3em 1.9em 0.3em 1.9em;
+  border-radius: 0px;
+  font-size: 1.2em;
+  font-weight: 400;
+  width: 8.5em;
+  border: none;
+  padding: 0.7em;
+
+
+}
+
+.addToCartBtn:hover {
+  background-color: rgb(108, 29, 235);
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+  color: white !important;
+  // background-image: linear-gradient(to right, #b396f3 0%,#4c259f 100%);
+
+}
+
+.sec4Imgs {
+  border-radius: 3px;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+
+}
+
+// .sec4Clm1{
+//   margin-right: 5px;
+// }
+// .sec4Card1{
+//   padding:0px;
+//   // height: 108%;
+
+// }
+
+.sec4HeadText {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.sec4Para {
+  font-size: 15px;
+  padding: 0em 3em 0em 3em;
+}
+
+.sec4Btn {
+  width: 170px;
+  background-color: #4C259F;
+  color: white;
+  // padding: 0.3em 1.9em 0.3em 1.9em;
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  // min-width: 50%;
+  // max-width: 56%;
+}
+
+
+
+.sec4Btn:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.sec5Text {
+  font-size: 22px;
+  color: #122362;
+
+
+}
+
+.treatmentListCardText {
+
+  margin-top: -75px;
+  background-color: white;
+  opacity: 0.9;
+}
+
+
+
+.homeSec4Img {
+  width: 100%
+}
+
+.newSec5BgClr {
+  background-color: #101828;
+}
+
+.newSec5Num {
+  background: linear-gradient(to right, #dbc7f3 0%, #4a1d80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.seatBtn {
+  background-color: #4c259f;
+  color: white;
+  padding: 4px;
+  font-weight: 200;
+  font-size: 1.1em;
+  border-radius: 2px;
+  font-weight: 100;
+  width: 16em;
+
+}
+
+.seatBtn:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+
+}
+
+.CTABgImg {
+  background-image: linear-gradient(rgba(169, 213, 254, 0.2),rgba(162, 203, 250, 0.2)) , url("../../assets/CTA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.submitBtn {
+  background-color: #4C259F;
+  color: white;
+  min-width: 30%;
+  max-width: 40%;
+  border-radius: 8px;
+}
+
+.submitBtn:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.border-end {
+  border-right: 1.5px solid #1f62a5 !important;
+  margin-right: 25px;
+}
+
+.text-over {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  /* number of lines to show */
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+
+// .secCTAcol2{
+//   margin-left: 60px;
+// }
+.secCTAcol1 {
+  margin-right: 60px;
+}
+
+.secCTAtext1 {
+  color: #122362;
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.secCTAtext2 {
+  color: #4C259F;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.smalltext {
+  font-size: 0.6em;
+}
+
+.secCTAtext3 {
+  color: #122362;
+  font-size: 2.3em;
+  font-weight:bold;
+  line-height: 1.2;
+}
+
+.secCTAtext4 {
+  font-size: 1em;
+  color: #667085;
+
+}
+.googleImg {
+  width: 5.5em;
+  margin-right: 5px;
+  height:1.9em;
+}
+
+.ratingText {
+  font-size: 0.7em;
+  color: #122362;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.googleBgclr {
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0.7;
+  padding: 0.6em 1.4em 0.4em 1.4em;
+  margin-right: -2.8em;
+
+}
+.ratingBox{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.bookTreatmentBtn {
+  background-color: #4C259F;
+  color: white;
+  width:11em;
+  padding:0.2em;
+  border-radius: 6px;
+}
+
+.bookTreatmentBtn:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+
+}
+
+
+.bookTreatmentBox {
+  opacity: 1;
+}
+
+
+
+.testimonialCardStar {
+  color: #F99D15;
+  font-size: 1.5em;
+  height: 30px;
+  width: 1em;
+}
+
+.testimonialBtn {
+  width:13em;
+  background-color: #4c259f;
+  color: white;
+  padding:0.3em;
+  font-weight: 200;
+  font-size: 1.2em;
+  border-radius: 2px !important;
+}
+.testimonialBtn:hover{
+  background-color: rgb(108, 29, 235);
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+
+
+// .courseBox2BgImg {
+//   background-image: url(./../../assets/courseBox2.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+.courseBox2Text {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.courseLightText {
+  font-weight: 100;
+}
+
+.courseBox2Para {
+  font-weight: 400;
+  font-size: 22px;
+  padding: 2em 1em 1em 1em;
+}
+
+.viewCourseBtn {
+  color: #4C259F;
+  border: 0.5px solid #667085;
+  min-width: 47%;
+  max-width: 64%;
+  padding: 4px;
+  // margin-right: 20px;
+  // padding:0em 2em 0em 2em;
+  font-size: 17px;
+  border-radius: 10px;
+  margin-right: 15px;
+
+}
+
+.addToCartBtn2 {
+  color: white;
+  padding: 4px;
+  background-color: #4C259F;
+  // padding:0em 2em 0em 2em;
+  min-width: 47%;
+  max-width: 64%;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.courseLightText2 {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.ATCSecBgclr {
+  background-color: #F5F5F5;
+
+}
+
+.blueBgClr {
+  background-color: #4C259F;
+
+}
+
+.darkBlueBgClr {
+  background-color: #122362;
+}
+
+.ATCtext1 {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.ATCtext2 {
+  font-size: 19px;
+  font-weight: 200;
+}
+
+.ATCtext3 {
+  font-size: 18px;
+  font-weight: 500;
+
+  padding: 0px 73px 0px 69px;
+}
+
+.ATCtext4 {
+  font-size: 15px;
+}
+
+.exploreCourseBtn {
+  color: #4C259F;
+  border: 0.1px solid #667085;
+  // margin-right: 20px;
+  // padding:0em 6em 0em 6em;
+  font-size: 14px;
+  min-width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+
+
+}
+
+.ATCbox {
+  padding: 2em 2em 2em 2em;
+}
+
+.applybtnATC {
+  background-color: #122362;
+  color: white;
+  // padding:0em 6em 0em 6em;
+  font-size: 14px;
+  min-width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.applybtnATC:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.clm3textATC {
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+.medicardBgClr {
+
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.medicardText {
+  line-height: 1.8em;
+
+}
+
+
+.btnenroll {
+  background-color: #4C259F;
+  color: white
+}
+
+
+.btnenroll:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.medicardBtn {
+  border: none;
+  background-color: #4C259F;
+  color: white;
+  border-radius: 5px;
+  min-width: 30%;
+  max-width: 20%;
+  padding: 7px;
+}
+
+.medicardBtn:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+
+}
+
+
+.bgGray {
+  background-color: #eeeeee;
+}
+
+.testimonialstar {
+  height: 29px !important;
+  width: 43px !important;
+  font-size: 34px;
+  background: linear-gradient(to right, #c9b9ec 0%, #4C259F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.testimonialLearner {
+  font-weight: 100;
+  font-size: 17px;
+  word-wrap: break-word;
+}
+
+.testimonialCard {
+  background-color: #f5f5f5;
+  // box-shadow:0px 1px 3px 5px rgb(0 0 0 / 7%);
+box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+}
+
+// .testimonialCard:hover {
+//   background-color: rgb(108, 29, 235);
+//   /* For browsers that do not support gradients */
+//   background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+//   color: white !important;
+//   margin-top: -15px;
+//   transition: all ease 0.8s;
+// }
+
+.testimonialCardHead {
+  color: rgb(37, 59, 86);
+font-size:1.6em;
+}
+
+// .testimonialCard:hover .testimonialCardHead {
+//   color: white;
+// }
+
+// .testimonialCard:hover .testimonialstar {
+//   background: linear-gradient(to right, white 0%, white 100%);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  margin-top: 4%;
+}
+.swiper-slide:hover {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  margin-top: 2.5%;
+  transition: all ease 0.7s;
+}
+
+.dysportImgs {
+  min-width: 50%;
+  max-width: 85%;
+  filter: brightness(0) invert(1);
+}
+
+.bgNavyBlue {
+  background-color: #101828;
+}
+
+.patientModelTExt {
+  background: linear-gradient(to right, rgb(128, 106, 177) 0%, #4010a9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5em;
+  word-wrap: break-word;
+  line-height: 1.2;
+}
+
+.patientModelTExt2 {
+  font-size: 1.2em;
+}
+
+.ViewTreatments {
+  width: 12em;
+  background-color: #4c259f;
+  color: white;
+  padding: 5px;
+  font-weight: 200;
+  font-size: 1.2em;
+  border-radius: 1px;
+}
+
+.ViewTreatments:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+
+
+
+::ng-deep .mat-card {
+  box-shadow: 0px 6px 4px rgba(208, 213, 221, 0.4) !important;
+}
+
+.CosmeticText {
+  font-size: 3.3em;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.CosmeticText2 {
+  color: rgb(196 191 191);
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.counterText {
+  font-size: 1.5em;
+}
+
+
+
+@media only screen and (min-device-width : 992px) {
+  .swiperMobile {
+    visibility: hidden;
+    display: none;
+  }
+  .swiperTablet{
+    visibility: hidden;
+    display: none;
+  }
+  .swiperLaptop {
+    visibility: visible;
+
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .swiperMobile {
+    visibility: visible;
+  }
+  .swiperTablet{
+    visibility: hidden;
+    display: none;
+  }
+
+  .swiperLaptop {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+// 1
+
+@media only screen and (min-device-width : 320px)and (max-device-width : 425px) {
+  .sec2HeadText1column1 {
+    text-align: center;
+  }
+
+  .sec2HeadText2column1 {
+
+    text-align: center;
+
+  }
+  
+
+  .sec2BgCLrcolumn2 {
+    padding: 2em 0.6em 2em 0.6em;
+  }
+
+  .textLightBlue {
+    color: #1D4ED8;
+    font-weight: 900;
+    font-size: 1em;
+  }
+
+  .headBlue {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .hrsecUpcoming {
+    display: flex;
+    justify-content: center;
+  }
+
+  .patientModelTExt {
+    font-size: 2.7em;
+  }
+  .popularCorusesText1{
+    text-align: center;
+  }
+  .popularCorusesText2{
+    text-align: center;
+  }
+  .hrLineCourseSec{
+    display: flex;
+    justify-content: center;
+  }
+  .popularCorusesText1 {
+    font-size: 2.9em;
+    word-wrap: break-word;
+  }
+  
+.viewAllBtn1 {
+  display: flex ;
+  justify-content: center;
+}
+.courseViewText {
+  color: blueviolet;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.CosmeticText {
+  font-size: 2.8em;
+  word-wrap: break-word;
+  
+}
+.googleBgclr {
+  margin-right: -1em;
+}
+
+}
+
+
+
+// 2
+@media only screen and (min-device-width : 426px) and (max-device-width : 768px) {
+
+  .swiperMobile {
+    visibility: hidden;
+    display: none;
+  }
+  .swiperTablet{
+    visibility: visible;
+ 
+  }
+
+  .swiperLaptop {
+    visibility: hidden;
+    display: none;
+  }
+
+  .sec2BgCLrcolumn2 {
+    padding: 3em 0.6em 3em 0.6em;
+  }
+
+  .patientModelTExt {
+    font-size: 2.7em;
+  }
+  .popularCorusesText1 {
+    font-size: 2.9em;
+    word-wrap: break-word;
+  }
+  .courseViewText {
+    color: blueviolet;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-right: 30px;
+    text-align: center;
+  
+  }
+  
+  .secCTAtext1 {
+    font-size: 1.8em;
+  }
+  
+  .secCTAtext2 {
+    font-size: 1.8em;
+  
+  }
+  
+  .smalltext {
+    font-size: 0.5em;
+  }
+  .border-end {
+  border-right: 1.5px solid #1f62a5 !important;
+  margin-right: 0em;
+}
+.ratingText {
+  font-size: 0.7em;
+  color: #122362;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ratingBox{
+  display: flex;
+  justify-content: flex-start;
+}
+.sec2Column1Para2 {
+  line-height: 1.8;
+  font-size: 14.4px;
+  padding: 0em 1em 0em 1em;
+
+}
+.sec2Column1Para {
+  line-height: 1.8;
+  font-size: 14.4px;
+  padding: 0em 0em 0em 0em;
+
+}
+.sec2HeadText2column1{
+  font-weight: 400;
+  font-size: 2em;
+}
+
+
+ 
+}
+
+
+

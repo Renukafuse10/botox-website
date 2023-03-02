@@ -1,0 +1,134 @@
+<div class="container-fuild pt-5" style="background-color: #f5f5f5; ">
+    <div class="row pt-5">
+        <div class="col-12 col-sm-2"></div>
+        <div class="col-12 col-sm-8 mt-lg-5 pb-5 rounded-3" style="background-color: #ffffff">
+            <div class="px-5">
+                <p class="fs-4 mt-5 lh-base textHeading">Patient Model Appointment Booking</p>
+                <p class="mt-5 fs-6" style="color: #344054">Select location</p>
+
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <select class="form-select" aria-label="Default select example"  [(ngModel)]="searchFor" >
+                            <option selected>Please Select Location</option>
+                            <!-- <option [selected]="isSelected('location')" value="1" *ngFor="let state of states" [value]="state | json">One</option> -->
+                        </select>
+                    </div>
+                    <div class="col-12 col-sm-6"></div>
+                </div>
+
+                <div class="row">
+                    <div class="clo-12 col-sm-6 col-md-6 col-lg-6">
+                        <!-- <input class="form-control me-2 mt-3" type="search"
+                             placeholder=" Botox/Dysport Treatment"
+                            aria-label="Search" /> -->
+                        <mat-form-field appearance="outline" class="w-100">
+                            <!-- <mat-label>Outline form field</mat-label> -->
+                            <input matInput placeholder=" Botox/Dysport Treatment" [(ngModel)]="query" (change)="getDataList()">
+                            <button *ngIf="query" matSuffix mat-icon-button aria-label="Clear" (click)="query=''; getDataList();"><mat-icon matPrefix>search</mat-icon></button>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-sm-3 col-md-6 col-lg-1 mt-3">
+                        <button mat-stroked-button>Clear</button>
+                    </div>
+                    <div class="col-sm-3  col-md-6 col-lg-2 mt-3">
+                        <div  style="padding-left: 23px;">
+                            <button mat-flat-button
+                             color="primary">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6  col-md-6 col-lg-2 mt-lg-1">
+                        <!-- <input class="form-control" type="date" /> -->
+                        <mat-form-field appearance="outline" class="dateField">
+                            <mat-date-range-input [rangePicker]="picker">
+                                <input matStartDate placeholder="Start date">
+                                <input matEndDate placeholder="End date">
+                            </mat-date-range-input>
+                            <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
+                            <mat-date-range-picker #picker></mat-date-range-picker>
+                        </mat-form-field>
+
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <div class="div d-flex justify-content-flex-start">
+                    <p class="fs-5 lh-base textHeading">Available Appointments in
+                        <span class="fs-5 textHeading1"> Vancouver, BC, Canada</span> </p>
+                    <!-- <p> Vancouver, BC, Canada</p> -->
+                </div>
+                <hr width="105" class="mt-2 hrLine">
+
+
+                <mat-card *ngFor="let treatments of dataCourse" class="container-fluid mt-4 rounded-3 pb-4" style="background-color:#F9FAFB;">
+                    <div class="row">
+
+
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <img class="mt-4" src="{{treatments.treatmentType[0].image_url  ?? './../../assets/page8-img-1.png'}}" alt="" style="width: 100%;">
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-9 col-lg-9 pr-lg-5 mr-lg-5 mt-4">
+                            <a class="mt-4 fs-5 pt-1 " style="font-weight:500; text-decoration:none; color: #4C259F !important;" routerLink="/treatment-page">{{ treatments.treatmentType[0].treatment_name }}</a>
+                            <div class="d-flex justify-content-start">
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <p class="fs-6 mx-2 pt-1" style="font-weight:500;">4.9</p>
+                                <p class="pt-1" style="color: #667085;">51 reviews</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6 d-flex">
+                                    <mat-icon style="color:#98A2B3"> location_on</mat-icon>
+                                    <p class="px-1" style="color: #667085;">  {{ treatments.country }}, {{ treatments.state }},
+                                        {{ treatments.city }}</p>
+                                </div>
+                                <div class="col-12 col-sm-2 col-md-2 col-lg-2"></div>
+                                <div class="col-12  col-md-12 col-lg-4">
+                                    <p><span class="fs-5 fw-bold" *ngIf="treatments.treatmentType[0].deposit_amount"
+                                        > CA{{ treatments.treatmentType[0].deposit_amount | currency }}</span> deposit</p>
+                                </div>
+                            </div>
+
+                            <p class="fs-6 textHeading1">
+                                <mat-chip-list [selectable]="true" >
+                               
+                                    <mat-chip *ngFor="let date of treatments.dates" [disabled]=" userSelectedDate == date ? true : false  "  
+                                       color="primary"  (click)="selectMe(date)" style="font-size: 12px !important;"
+                                      >{{ date | date:'fullDate'}} - {{treatments.duration}} minutes</mat-chip>
+                                  </mat-chip-list>
+                                </p>
+
+                            <p class="fs-6">Select a time:</p>
+                            <div class="div d-flex justify-content-between">
+                                <mat-chip-list aria-label="Fish selection">
+                                    <mat-chip
+                                      *ngFor="let time of treatments.treatmentTimeSlots" 
+                                      [disabled]="disableTime"
+                                      routerLink="/appointmentdetails" 
+                                      (click)="appointmentReview(treatments ,  time )"
+                                      >{{ convertFrom24To12Format(time) }}</mat-chip>
+                                  </mat-chip-list>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+                <div class="">
+                    <hr>
+                </div>
+
+                <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+                    aria-label="Select page">
+                </mat-paginator>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

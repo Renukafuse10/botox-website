@@ -1,0 +1,59 @@
+.textHeading{
+    font-weight: 500;
+}
+
+.textHeading1{
+    font-weight: 500;
+    color: #4C259F;
+}
+
+.hrLine{
+    height: 4px;
+    // color: #4C259F;
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+
+    opacity: 1.25;
+}
+
+
+
+.starIcon{
+    color: #FDB022;
+}
+
+.btnTime{
+    background : #256AD1;
+}
+
+
+::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline {
+    display: flex;
+    position: absolute;
+    top: 12px !important;
+    left: 0;
+    right: 0;
+    bottom: 5px !important;
+    pointer-events: none;
+}
+
+
+
+.dateField{
+    max-width: 190px;
+    min-width: 100px;
+
+}
+
+
+::ng-deep.mat-chip.mat-standard-chip  {
+    background-color: #256AD1;
+    color: #FFFFFF;
+}
+
+::ng-deep.mat-standard-chip{
+    border-radius: 2px !important;
+}
+
+.fonttext{
+    font-family: 'Open Sans' !important;
+}

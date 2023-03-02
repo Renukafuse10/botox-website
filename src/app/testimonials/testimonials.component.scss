@@ -1,0 +1,263 @@
+.bgimg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.4)) , url("../../assets/fellowship-our-classes.png");
+    width:100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+
+
+}
+
+.testimonialCards{
+    background-color: #F5F5F5B2;
+}
+
+
+
+
+.clrGray{
+    color:#4B5563;
+}.slidertestimonial{
+    background-color:#777474;
+    border-radius: 50%;
+    font-size: 2px;
+}
+.sec2ImgTestimonials{
+    min-width: 90px;
+    max-width: 119px;
+    min-height: 40px;
+    max-height: 35px;
+}
+.headTestimonials{
+    color:#122362;
+    font-weight: 450;
+    font-size: 35px;
+}
+.testimonialStar{
+    color: #F99D15;
+    font-size: 12px;
+    width: 13px;
+    height:10px;
+
+}
+.testimonialYellowLine{
+    border-top-color: #F99D15;
+    // height: 3px;
+    border-top-width: 1px;
+    width: 45px;
+}
+.testimonialVerified{
+    font-size: 10px;
+    color:#122362;
+    font-weight: 500;
+
+    
+}
+.testimonialCardImg{
+    border: 1px solid blueviolet;
+    border-radius: 50%;
+    padding:3px;
+    width:4em;
+    height:4em;
+
+}
+
+// .testimonialCard2{
+//     border: none;
+//     box-shadow: none;
+//     background-color: #F5F5F5B2;
+    
+// }
+.testimonialCardPara{
+    font-size: 15px;
+}
+.testimonialCardStar{
+    color: #F99D15;
+    font-size: 23px;
+
+}
+.testimonialReviewText{
+    color: #1F2937;
+
+}
+.TestimonialCardDate{
+    font-size: 12px;
+    
+}
+.testimonialFooterText1{
+font-size: 17px;
+}
+.testimonialFooterText2{
+    // color: #4C259F;
+    // font-size: 35px;
+    // font-weight: 500;
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 900;
+    
+
+}
+
+::ng-deep .carousel-control-prev{
+    position: absolute;
+    top: 250px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 4%;
+    height: 10%;
+    padding: 0;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 8.5;
+    transition: opacity .15s ease;
+    background-color:#F5F5F5;
+    border-radius: 50%;
+}
+::ng-deep .carousel-control-prev-icon {
+    background-image: url('./../../assets/svg/arrow1\ \(2\).svg');
+    width: 20% !important;
+    margin-left: 18px !important;
+}
+
+::ng-deep .carousel-control-next{
+    position: absolute;
+    top: 250px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 4%;
+    height: 10%;
+    padding: 0;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 8.5;
+    transition: opacity .15s ease;
+    background-color:#F5F5F5;
+    border-radius: 50%;
+   
+}
+::ng-deep .carousel-control-next-icon {
+    background-image: url('./../../assets/svg/arrow1\ \(1\).svg');
+    width: 20% !important;
+    margin-right: 18px !important;
+   
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 425px) {
+  .carousel-control-next{
+        position: absolute;
+        top:110px;
+  }
+  .carousel-control-prev{
+    position: absolute;
+        top:110px;
+  }
+  .carousel-control-next-icon {
+    margin-right: 4px !important;
+  }
+  .carousel-control-prev-icon {
+    margin-left: 4px !important;
+  }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .carousel-control-next-icon {
+    margin-right: 12px !important;
+  }
+  .carousel-control-prev-icon {
+    margin-left: 12px !important;
+  }
+  .carousel-control-next{
+    position: absolute;
+    top:190px;
+}
+.carousel-control-prev{
+position: absolute;
+    top:190px;
+}
+}
+.testimonialSec1Img{
+    min-width:50%;
+    max-width: 70%;
+     object-fit: cover;
+     object-position: center;
+     vertical-align: middle;
+     box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+     opacity:0.8;
+ }
+
+ 
+.matIconPlay{
+    position: absolute;
+    z-index: 1;
+    
+}
+.playIcon{
+   width:10%;
+
+}
+.opacityclass:hover .testimonialSec1Img{
+    opacity: 0.5;
+    filter: none;
+  }
+.opacityclass:hover .playIcon{
+    width:13%;
+    transition-timing-function: cubic-bezier(.25, .25, .75, .75);
+    transition-duration: 0.3s;
+}
+
+
+.textgradient {
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem !important;
+    font-weight: 900;
+  }
+::ng-deep .mat-card:not([class*=mat-elevation-z]) {
+ box-shadow: none !important;
+}
+
+//   @media only screen and (min-device-width: 320px){
+//     .carousel-control-prev{
+//         top:90px;
+//     }
+//     .carousel-control-next{
+//         top:90px;
+//     }
+//   }
+@media only screen and (min-device-width : 426px) and (max-device-width : 768px) {
+    
+
+       .textgradient {
+        background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.7em !important;
+        font-weight: 900;
+      }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .textgradient {
+        background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2em !important;
+        font-weight: 900;
+      }
+}

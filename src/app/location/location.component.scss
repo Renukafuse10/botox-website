@@ -1,0 +1,195 @@
+.fonttext{
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+}
+
+
+.tableDiv {
+  border-radius: 10px;
+
+}
+
+.sec1bgImg {
+  background-image: url(./../../assets/LocationHeadingImg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thead {
+  border-radius: 10px;
+}
+
+.blueBg {
+  background-image: url("./../../assets/locationSec2BgImg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -17%;
+}
+
+@media screen and (min-width: 1900px) { 
+  
+  .blueBg {
+    background-image: url("./../../assets/locationSec2BgImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -15%;
+  }
+
+  .secThreeRow {
+    padding-top: 30% !important;
+  }
+  
+
+ }
+
+
+.secThreeRow {
+  padding-top: 20%;
+}
+
+.imgset {
+  margin-left: -108px;
+  margin-top: 125px;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 335px;
+  max-height: 515px;
+}
+
+.textBlue {
+  color: #122362;
+}
+
+
+.gredientBg {
+  background-image: linear-gradient(#F5F5F580, #FCF9F980);
+}
+
+.SignUpBtn {
+  background-color: #122362;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+  border-radius: 9px;
+  min-width: 17%;
+  max-width: 45%;
+}
+
+.SignUpBtn:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);}
+
+
+.cardPink {
+  background-color: rgba(252, 249, 249, 0.8);
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 15px 4px rgba(245, 245, 245, 0.2), 0px 7px 6px rgba(208, 213, 221, 0.7);
+}
+
+.sec4logo {
+  margin-top: -55px;
+  width:21%;
+}
+
+.viewCourseSec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.5)) , url(./../../assets/swag3203-1024x683-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.secTwoImg {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 228px;
+  max-height: 515px;
+}
+
+
+
+.sec2Text {
+  font-size: 16.8px;
+}
+
+.sec2HeadText {
+  line-height: 3rem;
+}
+
+.viewCourseBtns {
+  background-color: #1DA1F2;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  min-width: 27%;
+  max-width: 50%;
+  padding:10px;
+}
+
+
+// @media (min-width: 576px) {
+
+//   .secTwoImg {
+//     min-width: 100px;
+//     min-height: 100px;
+//     max-width: 335px;
+//     max-height: 515px;
+//   }
+// }
+@media only screen and (min-device-width : 320px)and (max-device-width : 425px) {
+  .secTwoImg {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 218px;
+    max-height: 515px;
+  }
+}
+
+
+@media only screen and (min-device-width : 426px) and (max-device-width : 768px) {
+  .secTwoImg {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 210px;
+    max-height: 515px;
+  }
+}
+
+
+
+
+
+ 
+   
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: white !important;
+  border-radius: 8px;
+}
+
+
+.btnenroll{
+  background-color:#4C259F;
+   color:white
+}
+
+
+.btnenroll:hover{
+border:1px solid #4C259F;
+background-color: white;
+color:#4C259F;
+
+}
+::ng-deep .mat-table {
+  background: transparent !important;
+}
+.viewCourseBtns2{
+  border: 2px solid white;
+  font-size: 17px;
+  min-width: 13%;
+  max-width: 43%;
+  padding: 10px;
+  border-radius: 8px;
+}

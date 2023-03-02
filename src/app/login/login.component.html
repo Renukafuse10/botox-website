@@ -1,0 +1,139 @@
+<div style="padding-top: 5%;">
+
+<div class=" p-0  p-sm-5  my-5  my-sm-5 d-flex justify-content-center align-items-center text-center" >
+
+  <div class="box my-5 position-relative col-12 col-sm-6 col-md-10 col-lg-6 col-xl-6 card
+    ">
+    <div class="justify-content-start align-items-start text-start">
+
+      <div class="mx-2 mx-sm-5 px-3 px-sm-5">
+        <h2 class="mt-5" style="font-size: 30px; font: weight 700px; color:#101828">
+            Sign In</h2>
+        <p style="font-size: 12px; color:#667085">Welcome back! Select account type to sign in with
+          email.</p>
+          <form action="" [formGroup]="loginForm" (ngSubmit)="login()">
+          
+          <div class="radio-with-Icon">
+            <p class="radioOption-Item">
+              <input type="radio" formControlName="role" name="BannerTypes" id="BannerType1" value="learner"
+                clas  s="ng-valid ng-dirty ng-touched ng-empty" aria-invalid="false">
+              <label for="BannerType1" class="fs-6 ">
+                <div class="row d-flex justify-content-center align-items-center text-center">
+                  <div class="col-2"> <img style="height: 50px; width:50px;"
+                      src="../../assets/Group 38.svg" alt=""></div>
+                  <div class="col-10 align-items-start text-start" style="font-size: 16px; font-weight:700;">I am a
+                    Learner </div>
+                </div>
+              </label>
+            </p>
+            <div class="row d-flex justify-content-center align-items-center text-center ">
+              <div class="col">
+                <hr>
+              </div>
+              <div class="col-auto" style="color: #667085;">OR</div>
+              <div class="col">
+                <hr>
+              </div>
+            </div>
+            <p class="radioOption-Item mb-2">
+              <input type="radio" formControlName="role" name="BannerTypes" id="BannerType2" value="patient"
+                class="ng-valid ng-dirty ng-touched ng-empty" aria-invalid="false" style="">
+              <label for="BannerType2" class="fs-6">
+                <div class="row d-flex justify-content-center align-items-center text-center">
+                  <div class="col-2"><img style="height: 50px; width:50px;"
+                      src="../../assets/learner.svg" alt=""></div>
+                  <div class="col-10 align-items-start text-start" style="font-size: 16px; font-weight:700;">I am a
+                    Patient Model</div>
+                </div>
+              </label>
+            </p>
+          </div>
+        <div class="error text-center">
+          {{ error }}
+        </div>
+
+          <label for="email" class="d-flex justify-content-start fontStyle mb-2">Email*</label>
+          <div class="input-group mb-3">
+            <input formControlName="email" type="email" class="form-control" [class.is-invalid]="
+            submitted && 
+            (
+              loginForm.get('email')?.hasError('required') || loginForm.get('email')?.hasError('email')
+            )
+            " id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+          </div>
+          <label for="" class="d-flex justify-content-start fontStyle mb-2">Password*</label>
+          <div class="input-group mb-3">
+
+         <input formControlName="password" [class.is-invalid]="
+            submitted && 
+            (
+              loginForm.get('password')?.hasError('required')
+            )
+            " [type]="type" class="form-control" id="password" placeholder="Enter your password">
+            
+            <span style="top:0; right: 8px;"
+              class="position-absolute h-100 d-flex justify-content-end align-items-center">
+              <i (click)="toggle()" *ngIf="type == 'password'" class='bx bxs-hide bx-sm'></i>
+              <i (click)="toggle()" *ngIf="type == 'text'" class='bx bx-show bx-sm'></i>
+            </span>
+          </div>
+          <div 
+            *ngIf="submitted && loginForm.get('password')?.hasError('required')"
+            class="invalid-feedback">
+              Password is required.
+                        </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remember for 30 days
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <a class=" align-items-end text-end " style="color:#6941C6; font-weight: bold;" routerLink="/forgotpassword">Forgot password</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center ">
+            <button mat-flat-button type="submit" class="btn-signin btn-lg px-5 my-3 shadow-sm">Sign in with
+              email</button>
+          </div>
+
+          <div class="row d-flex justify-content-center align-items-center text-center ">
+            <div class="col">
+              <hr>
+            </div>
+            <div class="col-auto" style="color: #667085;">OR</div>
+            <div class="col">
+              <hr>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center my-4">
+            <button mat-flat-button type="submit" class="btn btn-lg"><span><img src="../../assets/google.png"
+                  alt=""></span> Continue with Google</button>
+
+          </div>
+          <div class="d-flex justify-content-center my-4">
+            <button mat-flat-button type="submit" class="btn btn-lg"><span><img src="../../assets/facebook.png"
+                  alt=""></span> Continue with Facebook</button>
+
+          </div>
+          <div class="d-flex justify-content-center my-4">
+            <button mat-flat-button type="submit" class="btn btn-lg"><span><img src="../../assets/apple.png"
+                  alt=""></span> Continue with Apple</button>
+
+          </div>
+          <div class="d-flex justify-content-center my-4">
+            <p class="fs-6 fontStyle">Don`t have account? <a style="color: #0C58CB;" routerLink="/signup">Sign up</a> </p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

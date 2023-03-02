@@ -1,0 +1,183 @@
+.fonttext {
+    //     font-family: 'Poppins', sans-serif !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.herosSec{
+  height:100%;
+}
+
+.particle {
+//  height: 100%;
+// height: 100%;
+width: 100%;
+// position: fixed;
+z-index: -100;
+}
+
+// .backcol{
+//   background-color: #071134; 
+//   height: 100%; 
+// }
+.backSec{
+   background-color: #FFFFFF; 
+}
+
+.aboutImg{
+  max-width: -webkit-fill-available;
+}
+
+
+.textgradient {
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // color: #FFFFFF;
+    font-size: 3.5em;
+  word-wrap: break-word;
+    font-family: 'Poppins', sans-serif !important;
+    }
+
+    .textgradient2 {
+      background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      // color: #FFFFFF;
+      font-size: 4em; 
+      font-family: 'Poppins', sans-serif !important;
+      }
+.btnview {
+  background-color: #4C259F;
+  color: #FFFFFF;
+ width:11em;
+  padding: 0.60em;
+  border-radius: 2px;
+  font-size: 1.2em;
+
+}
+
+
+.btnview:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.textcolor {
+    color: #4C259F;
+}
+
+hr {
+    height: 4px;
+    // color: #4C259F;
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+    
+    opacity: 1.25;
+}
+
+
+.btnregister {
+    background-color: #4C259F;
+    color: #FFFFFF;
+   width:10em;
+    padding: 0.60em;
+    border-radius: 2px;
+    font-size: 1.2em;
+
+}
+
+.btnregister:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+
+.btnplay {
+    width: 12%;
+    
+
+}
+.imgfellow{
+    position: absolute;
+    z-index: -1;
+}
+
+.hoverEffect {
+    background-color: rgb(47, 45, 45);
+    min-height: 81%;
+   height:90%;
+    opacity: 0.2;
+}
+
+// .hoverEffect:hover {
+//     opacity: 0.6;
+   
+// }
+// .fellowshipeffect:hover .btnplay{
+//     width: 14%;
+//     transition: all ease 0.7s;
+
+.border-start {
+    border-left: 4px solid #8e8e8e!important;
+}
+// }
+
+.fellowshipPrgmImg{
+  opacity:0.8;
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+  border-radius: 2px;
+  object-fit: cover;
+  object-position: center;
+  width:100%;
+}
+
+
+.matIconPlay{
+  position: absolute; 
+  z-index: 1;
+}
+.opacityclass{
+  position: relative;
+}
+
+.opacityclass:hover .fellowshipPrgmImg{
+  opacity: 0.5;
+  filter: none;
+}
+.playIcon{
+  width:10%;
+}
+.opacityclass:hover .playIcon{
+  width:13%;
+  transition-timing-function: cubic-bezier(.25, .25, .75, .75);
+  transition-duration: 0.3s;
+
+}
+
+
+
+
+// @media screen and (min-width: 600px) {
+//   .backcol{
+//   background-color: #071134; 
+//   height: 42em;   }
+   
+ 
+  
+// }
+
+
+// @media screen and (min-width: 1200px) {
+//   .backcol{
+//   background-color: #071134; 
+//   height: 100%;  
+//  }
+
+// }
+
+@media only screen and (min-device-width : 320px)and (max-device-width : 425px) {
+  .herosSec{
+    padding-top:10%;
+  }
+}
+@media only screen and (min-device-width : 426px) and (max-device-width : 768px) {
+  .herosSec{
+    padding-top:5%;
+  }
+}

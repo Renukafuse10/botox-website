@@ -1,0 +1,377 @@
+<!-- Swiper start -->
+
+<div class="container-fluid " style="background-color: #f5f5f5; ">
+  <swiper class="container " [slidesPerView]="1" [spaceBetween]="10" [navigation]="false"
+    [pagination]="{ clickable: true }" [autoplay]="{ delay: 7000, disableOnInteraction: false }">
+    <ng-template swiperSlide>
+      <div class="row">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-6 py-lg-5" data-mask-768="70">
+          <h2 class="swiperText  lh-base" data-aos="zoom-out-up" data-aos-delay="400">
+            Canada's Glod <br>Standard Botox <br>Traning Program
+          </h2>
+          <p data-aos="zoom-out-up" data-aos-delay="800" class="lh-base fw-lighter mt-2 swiperText2 "
+            style="color: #8e8e8e; font-size: 1.1rem !important">
+            Our neuromodulator training course is designed for <br> licensed health care professionals across Canada
+          </p>
+          <div class="Positionbtnswiperviewcard mt-4">
+            <button data-aos="zoom-out-up" data-aos-delay="1200" mat-flat-button class="lh-base btnswiperviewcard">View
+              Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center">
+          <img data-aos="zoom-out-up" data-aos-delay="800" class="swiperImg"
+            src="../../assets/course-page-slider-img1.png">
+        </div>
+      </div>
+    </ng-template>
+    <div class="swiper-button-next ng-star-inserted swiper-button-disabled" hidden="true"></div>
+    <div class="swiper-button-prev ng-star-inserted swiper-button-disabled" hidden="true"></div>
+    <ng-template swiperSlide>
+      <div class="row ">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-6 py-lg-5 ">
+          <h2 class="swiperText  lh-base" data-aos="zoom-out-up" data-aos-delay="400">
+            Enrol in Canada’s Most <br>Comprehensive Dermal <br>Filler Program
+          </h2>
+          <p class="lh-base fw-lighter mt-2 swiperText2 " data-aos="zoom-out-up" data-aos-delay="800"
+            style="color: #8e8e8e; font-size: 1.1rem !important">
+            Unlock your potential and grow your practice in this <br> immersive training program
+          </p>
+          <div class="Positionbtnswiperviewcard  mt-4 ">
+            <button mat-flat-button class="lh-base btnswiperviewcard" data-aos="zoom-out-up" data-aos-delay="1200">View
+              Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center">
+          <img class="swiperImg" data-aos="zoom-out-up" data-aos-delay="800"
+            src="../../assets/course-page-slider-img2.jpg">
+        </div>
+      </div>
+    </ng-template>
+    <div class="swiper-button-next ng-star-inserted swiper-button-disabled" hidden="true"></div>
+    <div class="swiper-button-prev ng-star-inserted swiper-button-disabled" hidden="true"></div>
+    <ng-template swiperSlide>
+      <div class="row ">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-6 py-lg-5">
+          <h2 class="swiperText  lh-base " data-aos="zoom-out-up" data-aos-delay="400">
+            The Microneedling <br> Course for Medical Professionals
+          </h2>
+          <p class="lh-base fw-lighter mt-2 swiperText2" data-aos="zoom-out-up" data-aos-delay="800"
+            style="color: #8e8e8e; font-size: 1.1rem !important">
+            Evidence Based | Hands-on | Comprehensive
+          </p>
+          <div class="Positionbtnswiperviewcard  mt-4 ">
+            <button mat-flat-button class="lh-base btnswiperviewcard" data-aos="zoom-out-up" data-aos-delay="1200">View
+              Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6col-md-6 col-sm-6 d-flex justify-content-center ">
+          <img class="swiperImg" data-aos="zoom-out-up" data-aos-delay="800"
+            src="../../assets/course-page-slider-img3.jpg">
+        </div>
+      </div>
+    </ng-template>
+    <div class="swiper-button-next ng-star-inserted swiper-button-disabled" hidden="true"></div>
+    <div class="swiper-button-prev ng-star-inserted swiper-button-disabled" hidden="true"></div>
+  </swiper>
+
+</div>
+
+<!-- Swiper End -->
+
+<!-- Traning Courses section Start -->
+<div class="container py-5  my-lg-5 ">
+  <div class="py-lg-4">
+    <p class="fs-2 text-center lh-base">Online Didactic Training Courses</p>
+    <div class="row ">
+      <div class="col-12 col-sm-4 col-md-6 col-lg-4 mt-0 mt-sm-5" *ngFor="let course of allCourse">
+        <div class="colllmn1">
+          <img [src]="course.image" width="100%" style="height: 440px" />
+          <div class="courseBox2BgImg">
+            <!-- <img src="./../../assets/courseBox2.png" alt="" class=""> -->
+            <div class="hoverBg">
+              <p class="text-white text-center fs-4 pt-5">{{ course.name }}</p>
+              <p class="text-white text-center text-over lh-base courseBox2Para p-4">
+                {{ course.shortDescription }}
+              </p>
+              <hr class="m-0 px-0 text-white" />
+              <div class="d-flex justify-content-center align-items-start py-2">
+                <img src="./../../assets/svg/svgPlay.svg" alt="" />
+                <p class="text-white mx-2 courseBox2Text">
+                  {{ course.onlineLessons }} Lessons
+                  <span class="courseLightText">(averages $34/lesson)</span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-center align-items-start">
+                <img src="./../../assets/svg/clock2Svg.svg" alt="" />
+                <p class="text-white mx-2 courseBox2Text">
+                  {{ course.handsOnTraining }} Days of Hands-on Training
+                </p>
+              </div>
+              <hr class="m-0 px-0 text-white" />
+              <div class="pt-3">
+                <p class="text-center text-white fs-2 m-0 p-0">
+                  ${{ course?.courseSchedules[0]?.price }}
+                </p>
+                <p class="pt-1 pb-2 text-center text-white courseLightText2">
+                  plus applicable taxes
+                </p>
+              </div>
+            </div>
+            <div class="px-3 px-lg-4 mt-3 d-flex justify-content-between">
+              <button mat-button class="viewCourseBtn" (click)="goToDetails(course)">
+                View Course
+              </button>
+              <button mat-button class="addToCartBtn2  lh-base">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Traning Courses section End -->
+<!--Are you a Nurse? Enroll Today to Save $1000 start-->
+<div class="container-fluid py-5" style="background-color: #040A23">
+  <div class="row d-flex justify-content-center erollContained">
+    <div class="col-12 col-lg-8 col-xl-8 col-md-8 col-sm-8">
+      <h2 class=" lh-base text-center enroollText" data-aos="zoom-out-up" data-aos-delay="400">
+        Are you a Nurse? Enroll Today to Save $1000
+      </h2>
+    </div>
+    <div class="col-12 col-lg-8 col-xl-8 col-md-7 col-sm-7">
+      <h6 class="lh-base fw-light mt-2 text-center px-4 mx-1" data-aos="zoom-out-up" data-aos-delay="800" style="color: #8e8e8e; font-size: 1.5rem !important">
+        Nurses receive a $1000 discount when they sign up for the botox and
+        filler <br>course package. This course package includes online and hands-on<br>
+        training for both botox and filler courses.
+      </h6>
+      <div class="d-flex justify-content-center mb-5 mt-3">
+        <button mat-flat-button class="lh-base btnswiperviewcard" data-aos="zoom-out-up" data-aos-delay="1200">View Course</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--Are you a Nurse? Enroll Today to Save $1000 End-->
+<!--Online & Hands-on Training Start-->
+<div class="container py-lg-5">
+  <div class="">
+    <p class="fs-2 text-center lh-base pt-5" style="font-size: 2.0rem !important;">Online & Hands-on Training</p>
+    <div>
+      <div class="row ">
+        <div *ngFor="let courseOnlineHandsOn of allCourseOnlineHandsOn"
+          class="col-12 col-sm-4 col-md-6 col-lg-4 mt-0 mt-sm-5">
+          <div class="colllmn1">
+            <img [src]="courseOnlineHandsOn.image" width="100%" style="height: 440px" />
+            <div class="courseBox2BgImg">
+              <!-- <img src="./../../assets/courseBox2.png" alt="" class=""> -->
+              <div class="hoverBg">
+                <p class="text-white text-center fs-4 pt-5">
+                  {{ courseOnlineHandsOn.name }}
+                </p>
+                <p class="text-white text-center text-over lh-base courseBox2Para p-4">
+                  {{ courseOnlineHandsOn.shortDescription }}
+                </p>
+                <hr class="m-0 px-0 text-white" />
+                <div class="d-flex justify-content-center align-items-start py-2">
+                  <img src="./../../assets/svg/svgPlay.svg" alt="" />
+                  <p class="text-white mx-2 courseBox2Text">
+                    {{ courseOnlineHandsOn.onlineLessons }} Lessons
+                    <span class="courseLightText">(averages $34/lesson)</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center align-items-start">
+                  <img src="./../../assets/svg/clock2Svg.svg" alt="" />
+                  <p class="text-white mx-2 courseBox2Text">
+                    {{ courseOnlineHandsOn.handsOnTraining }} Days of Hands-on
+                    Training
+                  </p>
+                </div>
+                <hr class="m-0 px-0 text-white" />
+                <div class="pt-3">
+                  <p class="text-center text-white fs-2 m-0 p-0">
+                    ${{ courseOnlineHandsOn?.courseSchedules[0]?.price }}
+                  </p>
+                  <p class="pt-1 pb-2 text-center text-white courseLightText2">
+                    plus applicable taxes
+                  </p>
+                </div>
+              </div>
+              <div class="px-3 px-lg-4 d-flex justify-content-between mt-3">
+                <button mat-button class="viewCourseBtn" (click)="goToDetails(courseOnlineHandsOn)">
+                  View Course
+                </button>
+                <button mat-button class="addToCartBtn2">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Online & Hands-on Training End-->
+<!-- Hands-on Training Courses Start -->
+<div class="container-fluid py-lg-5" style="background-color: #f5f5f5">
+  <div class="container py-lg-5">
+    <div class="">
+      <p class="fs-2 text-center lh-base">Hands-on Training Courses</p>
+      <div class="row ">
+        <div class=" col-12 col-sm-4 col-md-6 col-lg-4 mt-0 mt-sm-5" *ngFor="let courseHandsOn of allCourseHandsOn">
+          <div class="colllmn1  ">
+            <img [src]="courseHandsOn.image" width="100%" style="height: 440px" />
+            <div class="courseBox2BgImg ">
+              <!-- <img src="./../../assets/courseBox2.png" alt="" class=""> -->
+              <div class="hoverBg ">
+                <p class="text-white text-center fs-4 pt-5">
+                  {{ courseHandsOn.name }}
+                </p>
+                <p class="text-white text-center text-over lh-base courseBox2Para p-4">
+                  {{ courseHandsOn.shortDescription }}
+                </p>
+                <hr class="m-0 px-0 text-white" />
+                <div class="d-flex justify-content-center align-items-start py-2">
+                  <img src="./../../assets/svg/svgPlay.svg" alt="" />
+                  <p class="text-white mx-2 courseBox2Text">
+                    {{ courseHandsOn.onlineLessons }} Lessons
+                    <span class="courseLightText">(averages $34/lesson)</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center align-items-start">
+                  <img src="./../../assets/svg/clock2Svg.svg" alt="" />
+                  <p class="text-white mx-2 courseBox2Text">
+                    {{ courseHandsOn.handsOnTraining }} Days of Hands-on Training
+                  </p>
+                </div>
+                <hr class="m-0 px-0 text-white" />
+                <div class="pt-3">
+                  <p class="text-center text-white fs-2 m-0 p-0">
+                    ${{ courseHandsOn?.courseSchedules[0]?.price }}
+                  </p>
+                  <p class="pt-1 pb-2 text-center text-white courseLightText2">
+                    plus applicable taxes
+                  </p>
+                </div>
+              </div>
+              <div class="px-3 px-lg-4  mt-3 d-flex justify-content-between">
+                <button mat-button class="viewCourseBtn" (click)="goToDetails(courseHandsOn)">
+                  View Course
+                </button>
+                <button mat-button class="addToCartBtn2 lh-base">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hands-on Training Courses End -->
+<!-- Still have questions? Start -->
+<div class="container py-lg-5 my-lg-5">
+  <div class="row py-5">
+    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+      <div class="mask-radius"></div>
+      <img src="./../../assets/Home_img11.png" alt="" width="100%" />
+    </div>
+    <div class="col-12  col-sm-6 col-md-6 col-lg-6 ">
+      <form [formGroup]="questionsForms">
+        <p class="textBlue fs-1 py-2 lh-base">Still have questions?</p>
+        <p class="lh-base sec5Text">
+          Fill in the form below and our Course Coordinator will contact you
+          shortly.
+        </p>
+        <p>Email Address</p>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <input matInput placeholder="codeabr@gmail.com" formControlName="user_email" />
+        </mat-form-field>
+        <p>Name</p>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <input matInput placeholder="Name" formControlName="user_name" />
+        </mat-form-field>
+
+        <p>Phone Number</p>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <input matInput placeholder="--- --- -----" formControlName="user_mobile" />
+        </mat-form-field>
+
+        <p>Message</p>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <textarea matInput placeholder="Type your Message" formControlName="user_message"></textarea>
+        </mat-form-field>
+
+        <button mat-button class="submitBtn mt-4" (click)="addQuestions()">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="container mt-5">
+  <div class="row mb-5">
+    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+      <form [formGroup]="firstFormGroup">
+        <mat-stepper labelPosition="bottom" #stepper>
+          <mat-step [stepControl]="firstFormGroup">
+            <ng-template matStepLabel>Personal Details</ng-template>
+            <p class="fs-2 mt-3">Still have questions?</p>
+      <p class="fw-light mt-5" style="font-size: 16px !important">
+        Fill in your details and our Course Coordinator will contact you
+        shortly.
+      </p>
+      <div class="mt-5">
+        <mat-form-field appearance="outline" class="w-100">
+          <input matInput placeholder="Email" class="fs-6" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="w-100">
+          <input matInput placeholder="Name" class="fs-6" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="w-100">
+          <input matInput placeholder="Phone" class="fs-6" />
+        </mat-form-field>
+
+        <div class="">
+          <button
+            mat-flat-button
+            matStepperNext
+            color="primary"
+            style="background-color: #4c259f"
+          >
+            Next <mat-icon matSuffix> arrow_right_alt</mat-icon>
+          </button>
+        </div>
+      </div>           
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup">
+            <ng-template matStepLabel>Your Message</ng-template>
+            <div class="mt-5">
+              <mat-form-field appearance="outline" class="w-100">
+                <textarea matInput placeholder="Message" class="fs-6" ></textarea>
+              </mat-form-field>
+      
+              <div class="">
+                <button
+                  mat-flat-button
+                  matStepperNext
+                  color="primary"
+                  style="background-color: #4c259f"
+                >
+                  Next <mat-icon matSuffix> arrow_right_alt</mat-icon>
+                </button>
+              </div>
+            </div>
+          </mat-step>
+        </mat-stepper>
+      </form>
+     
+    </div>
+    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+      <div class="mask-radius"></div>
+      <img class="form-img" src="../../assets/26771.jpg" />
+    </div>
+  </div>
+</div> -->
+<!-- Still have questions? End -->

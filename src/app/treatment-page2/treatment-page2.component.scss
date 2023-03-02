@@ -1,0 +1,130 @@
+.herosSecBgImg{
+    background-image: linear-gradient(rgba(24, 34, 53, 0.54),rgba(24, 34, 53, 0.54)) , url('./../../assets/CTA.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position-y: center;
+    height:22em;
+  opacity: 0.9;
+}
+
+.patientModelText{
+    font-size: 3em;
+    word-wrap: break-word;
+    font-weight:bold;
+    background: linear-gradient(to right, #7957c0 20%, #4c259f 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.person{
+    width: 20%;
+   height: 40%;
+    border-radius: 100%;
+}
+.item{
+    margin-bottom: 3em;
+}
+.text-over {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+.featured{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+ 
+    padding: 35px;
+    border: none;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    font-family: 'Poppins' !important;;
+}
+.featured:hover{
+    background-color: rgb(108, 29, 235);
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom left,
+        #4C259F, rgb(169, 85, 247));
+    color: white !important;
+    margin-top: -15px;
+    transition: all ease 0.8s;
+}
+.TreatmentLearn{
+    color:#4c259f; 
+    text-decoration:none;
+}
+.featured:hover .TreatmentLearn{
+    color:white;
+}
+.rightarrow{
+    color:balck;
+
+}
+.featured:hover .rightarrow{
+    color:white;
+}
+
+
+.treatmentListCardText {
+
+    margin-top: -75px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 5px;
+  }
+  
+  
+  
+  .homeSec4Img {
+    width:20em;
+  }
+  .sec4HeadText {
+    font-size: 2em;
+    font-weight: 600;
+  }
+  
+  .sec4Para {
+    font-size: 1em;
+    padding: 0em 3em 0em 3em;
+    min-height: 80px;
+    max-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  
+  .sec4Btn {
+    width: 10em;
+    background-color: #4C259F;
+    color: white;
+    // padding: 0.3em 1.9em 0.3em 1.9em;
+    border-radius: 0px;
+    font-size: 1em;
+    font-weight: 400;
+    // min-width: 50%;
+    // max-width: 56%;
+  }
+  
+  .sec4Imgs {
+    border-radius: 3px;
+      width: 100%;
+      padding: 0px 0px 0px 0px;
+    
+    }
+
+    ::ng-deep .mat-card {
+      box-shadow: 0px 6px 4px rgba(208, 213, 221, 0.4) !important; 
+      border-radius: 5px;
+     }
+  
+  .sec4Btn:hover{
+    background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);  
+  }
+
+

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Poppins' !important;}
+
+.mat-table, .mat-card{
+    font-family: 'Poppins' !important;
+}
+
+.mat-button, .mat-flat-button{
+    font-family: 'Poppins' !important;
+}
+
+
+@import "swiper/css";
+
+// @import "~swiper/css/navigation";
+// @import "~swiper/css/pagination";
+
+// .swiper{
+//     width: 100%;
+//     height: 100%;
+// }
+
+
+// .swiper-sider img{
+//     width: 100%;
+//     height: 100%;
+// }
+

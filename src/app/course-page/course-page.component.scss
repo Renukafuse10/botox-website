@@ -1,0 +1,313 @@
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0 !important;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 0 !important;
+}
+
+.swiperText {
+  font-size: 44px !important;
+  font-weight: 600 !important;
+  background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Poppins', sans-serif !important;
+  word-wrap: break-word;
+  // padding: 2%;
+
+}
+.swiperImg{
+  width:80%;
+  height:100%;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  transition-property: transform;
+  margin-top: 10% !important;
+}
+
+.btnswiperviewcard {
+  background-color: #4C259F;
+  color: #FFFFFF;
+  width: 9.8em;
+  padding: 12px;
+  border-radius: 2px !important;
+  font-size: 16px;
+}
+
+.btnswiperviewcard:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+.Positionbtnswiperviewcard{
+  display: flex;
+  justify-content: start;
+}
+
+.btnview {
+  background-color: #4C259F;
+  color: #FFFFFF;
+  min-width: 6%;
+  max-width: 40%;
+  padding: 12px;
+  border-radius: 2px !important;
+  font-size: 16px;
+}
+
+.btnview:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.text-over {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.textBlue {
+  color: #4C259F;
+  font-weight: 500;
+}
+
+.sec5Text {
+  font-size: 22px;
+  color: #122362;
+
+
+}
+
+.submitBtn {
+  background-color: #4C259F;
+  color: white;
+  min-width: 30%;
+  max-width: 40%;
+  border-radius: 8px;
+}
+
+.submitBtn:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+// .gallery {
+//     position: relative;
+//     overflow: hidden;
+// }
+
+.form-img {
+  width: 100%;
+  height: 75vh;
+}
+
+.mask-radius {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  // right: 15px;
+  bottom: 0;
+  // width: 58%;
+  height: 58%;
+  // background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 0%, var(--primary-color) 55%);
+  background-image: linear-gradient(45deg, var(--secondary-color) 0%, var(--primary-color) 55%);
+  border-radius: 100% 0 0 0;
+  opacity: 0.25;
+}
+
+.courseBox2BgImg {
+  margin-top: -440px;
+  opacity: 0;
+
+
+}
+
+.colllmn1 {
+  margin-bottom: 2em;
+}
+
+.colllmn1:hover {
+  transition: all ease 0.2s;
+  margin-top: -9px;
+
+}
+
+.courseBox2BgImg:hover {
+  opacity: 0.8;
+}
+
+.hoverBg {
+  background: rgb(88, 19, 201);
+  height: 440px;
+}
+
+.courseBox2Para {
+  font-weight: 400;
+  font-size: 22px;
+
+}
+
+.courseBox2Text {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.courseLightText {
+  font-weight: 100;
+}
+
+.courseLightText2 {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.viewCourseBtn {
+  color: #4C259F;
+  border: 0.5px solid #667085;
+  width: 10em;
+  font-weight: 600;
+  padding: 0.3em;
+  // margin-right: 20px;
+  // padding:0em 2em 0em 2em;
+  font-size: 17px;
+  border-radius: 10px;
+
+
+}
+
+.addToCartBtn2 {
+  color: white;
+  padding: 0.3em;
+  background-color: #4C259F;
+  // padding:0em 2em 0em 2em;
+  width: 10em;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+
+
+.enroollText {
+  font-size: 42px !important;
+  font-weight: 600 !important;
+  background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Poppins', sans-serif !important;
+  // padding: 2%;
+}
+
+
+.erollContained {
+  width: 100%;
+
+}
+
+
+
+
+.addToCartBtn2:hover {
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+
+}
+
+
+@media only screen and (min-device-width : 320px)and (max-device-width : 425px) {
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    margin-top:25% !important;
+  }
+  .swiperText{
+    text-align: center;
+    font-size: 40px !important;
+  }
+  .swiperText2{
+    text-align: center !important;
+  }
+  .Positionbtnswiperviewcard{
+    display: flex;
+    justify-content: center;
+  }
+  .viewCourseBtn {
+    color: #4C259F;
+    border: 0.5px solid #667085;
+    width: 8.5em;
+    font-weight: 600;
+    padding: 0.3em;
+    // margin-right: 20px;
+    // padding:0em 2em 0em 2em;
+    font-size: 17px;
+    border-radius: 10px;
+  
+  
+  }
+  
+  .addToCartBtn2 {
+    color: white;
+    padding: 0.3em;
+    background-color: #4C259F;
+    // padding:0em 2em 0em 2em;
+    width: 8.5em;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+
+}
+@media only screen and (min-device-width : 426px) and (max-device-width : 768px) {
+  .swiperImg{
+    width:80%;
+    height:95%;
+  }
+  .swiperText{
+    font-size: 38px !important;
+  }
+  .swiper-slide {
+    margin-top:17% !important;
+  }
+  .viewCourseBtn {
+    color: #4C259F;
+    border: 0.5px solid #667085;
+    width:8.60em;
+    font-weight: 600;
+    padding: 0.3em;
+    // margin-right: 20px;
+    // padding:0em 2em 0em 2em;
+    font-size: 17px;
+    border-radius: 10px;
+  
+  
+  }
+  
+  .addToCartBtn2 {
+    color: white;
+    padding: 0.3em;
+    background-color: #4C259F;
+    // padding:0em 2em 0em 2em;
+    width: 8.60em;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+  
+
+}

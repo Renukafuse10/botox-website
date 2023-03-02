@@ -1,0 +1,342 @@
+.BlueBgClr {
+    background-color: #071134;
+
+}
+
+.courseimgg {
+    min-width: 100%;
+    max-width: 30%;
+}
+
+.courseSec1Text1 {
+    font-size: 43px;
+}
+
+.courseSec1Text2 {
+    font-size: 17px;
+}
+
+.CourseSec1Star {
+    color: #fad37e;
+
+
+
+}
+
+// .material-icons{
+//     font-size: 14px;
+// }
+// .mat-icon {
+//     width: 16px;
+// }
+.CourseRating {
+    font-size: smaller;
+    font-weight: 50;
+
+}
+
+// .CourseSec2{
+//  --bs-gutter-x:0rem;
+// }
+// .courseSec2Column1{
+//     width:700px
+// }
+
+// .courseSec2Text1{
+//     color:#000000;
+//     font-size: 13px;
+//     font-weight: 700;
+
+
+// }
+
+.GrayBgClr {
+    background-color: #faf7f7;
+
+
+}
+
+.SelectCourse {
+    margin-top: -65.7%;
+
+}
+
+.SelectCourseBtn2 {
+    border-radius: 10px;
+    font-size: 1.20em;
+    font-weight: 600;
+    color: white;
+    background-color: #4C259F;
+    box-shadow: 1px 4px 3px 1px #dcdbdb !important;
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    transition: all ease 0.3s;
+ 
+}
+
+.SelectCourseBtn2:focus {
+
+    border-radius: 10px;
+    font-size: 18px;
+    color: #4C259F;
+    background-color: white;
+
+}
+
+.SelectCourseBtn2:hover{
+    background-color: #8161C6;
+}
+.What’sIncludePoints {
+    font-size: 14px;
+}
+
+.nurseDiscountText1 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nurseDiscountText2 {
+    color: #667085;
+    font-size: 14.5px;
+}
+
+.description {
+    font-size: 16.2px;
+    font-weight: 400;
+    color: #040A23;
+
+}
+
+.certificateText {
+    font-size: 17px;
+    color: black;
+}
+
+
+
+
+// .mat-icon{
+//     width: 20px;
+// }
+
+
+// .courseMatArrow{
+//     font-size: 35px;
+// }
+
+.column1sec6Text1 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.column1sec6Text2 {
+    font-size: 15.5px;
+}
+
+.column1sec7Head {
+    color: #4C259F;
+    font-size: 22px;
+    font-weight: 700;
+
+}
+
+.column1sec7Text1 {
+    color: #122362;
+    font-size: 17.5px;
+    font-weight: 500;
+
+}
+
+.column1sec7Text2 {
+    font-size: 20px;
+    color: #8161C6;
+    font-weight: 800;
+}
+
+.column1sec7Button {
+    color: #4C259F;
+
+    width: 130px;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.column1sec6Text3 {
+    font-size: 17.5px;
+    font-weight: 500;
+}
+
+.column1sec8Img {
+    max-width: 98%;
+    min-width: 87%;
+}
+
+.column1sec9Heading {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.column1sec9Text1 {
+    font-weight: 500;
+}
+
+.orangeStar {
+    color: #F99D15;
+    width: 25px;
+    font-size: 20px;
+    font-weight: 600;
+
+
+
+}
+
+.sec9Stars {
+    font-size: 21px;
+}
+
+.column1sec9Text2 {
+    color: #6B6768;
+    font-weight: 400;
+    font-size: 14.5px;
+
+}
+
+.coursesec9Img {
+    border-radius: 50%;
+    width: 10%;
+}
+
+.column1sec9ReviewsHead {
+    color: #1F2937;
+    font-size: 14.5px;
+    font-weight: 600;
+
+}
+
+.sec9Date {
+    color: #667085;
+    font-size: 12px;
+
+}
+
+.column1sec9Para {
+    font-size: 16px;
+
+}
+
+
+::ng-deep .mat-raised-button {
+    box-shadow: none !important;
+}
+
+::ng-deep .mat-error {
+    margin-top: -20px !important;
+    font-size: 13px;
+}
+
+
+.btnaddcart {
+    background-color: #4C259F;
+    color: white;
+    font-size: 1em;
+    width: 9em;
+    font-weight: 500;
+    border-radius: 9px;
+
+}
+
+.btnaddcart:hover {
+    background-image: linear-gradient(to bottom left, #4c259f 35%, #a481ef 100%);
+}
+
+
+.btnfillerpackage {
+    background-color: #122362;
+    color: white;
+    font-weight: 600;
+    font-size: 1.20em;
+    border-radius: 9px;
+    width: 80%;
+    padding:0.7em;
+    box-shadow: 1px 4px 3px 1px #dcdbdb !important;
+    border: none;
+    transition: all ease 0.6s;
+}
+
+.btnfillerpackage:hover {
+    border-radius: 10px;
+    font-size: 18px;
+    color: #4C259F;
+    background-color: white;
+}
+.bookTeamBtn {
+    background-color: white;
+    color:  #122362;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 9px;
+    font-size: 1.20em;
+    font-weight: 600;
+    width: 80%;
+    padding:0.5em;
+}
+
+.text-over {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.watchIcon {
+    width: 34px;
+}
+
+
+@media only screen and (min-device-width : 320px)and (max-device-width : 425px) {
+    .SelectCourse {
+        margin-top: 0%;
+
+    }
+    ::ng-deep .mat-expansion-panel-header {
+        height: 72px !important;
+    }
+    .column1sec7Head {
+     display: flex;
+     justify-content: center;
+    
+    }
+    .LearnerReview{
+        display: grid;
+        justify-content: center;
+    }
+    .NewCourseBox{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-device-width : 426px) and (max-device-width : 768px) {
+    .SelectCourse {
+        margin-top: -104.2%;
+
+    }
+
+    .SelectCourseBtn2 {
+        border-radius: 10px;
+        font-size: 1.2em;
+        color: white;
+        background-color: #4C259F;
+        box-shadow: 1px 4px 3px 1px #dcdbdb !important;
+        width: 100%;
+        padding: 0.5em;
+    }
+    ::ng-deep .mat-expansion-panel-header {
+        height: 55px;
+    }
+}

@@ -1,0 +1,330 @@
+.fonttext {
+    //     font-family: 'Poppins', sans-serif !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.herosSec{
+  background-color:#071134;
+  height: 100%;
+}
+.btnview {
+  background-color: #4C259F;
+  color: #FFFFFF;
+ width:11em;
+  padding: 0.60em;
+  border-radius: 2px;
+  font-size: 1.3em;
+
+}
+
+.textBlue {
+  color: #4C259F;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.textgradient {
+    // background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+.btnview {
+    background-color: #4C259F;
+    color: #FFFFFF;
+    min-width: 16%;
+    max-width: 74%;
+    padding: 12px;
+
+}
+
+.btnapply{
+    
+    background-color: #4C259F;
+    color: #FFFFFF;
+    min-width: 12%;
+    max-width: 74%;
+    padding: 5px;
+}
+
+.btnapply:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);  
+  }
+
+.btnview:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.textcolor {
+    color: #4C259F;
+}
+
+.hr1 {
+    height: 4px;
+    // color: #4C259F;
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+    
+    opacity: 1.25;
+}
+
+.hrLine{
+    height: 4px;
+    // color: #4C259F;
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+
+    opacity: 1.25;
+}
+
+
+
+.hrLine1{
+    height: 4px;
+    // color: #4C259F;
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+
+    opacity: 1.25;
+}
+
+
+.fs-1{
+    font-size: 3rem !important;
+}
+
+
+.ATCtext1 {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.ATCtext2 {
+font-size: 19px;
+font-weight: 200;
+}
+
+.ATCtext3 {
+font-size: 18px;
+font-weight: 500;
+padding: 0px 73px 0px 69px;
+}
+
+.ATCtext4 {
+font-size: 15px;
+}
+
+.ATCbox {
+    padding: 2em 2em 2em 2em;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);;
+}
+
+
+.applybtnATC {
+    background-color: #122362;
+    color: white;
+    // padding:0em 6em 0em 6em;
+    font-size: 14px;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    padding:2px;
+}
+
+.applybtnATC:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+
+
+.exploreCourseBtn {
+color: #4C259F;
+border: 0.1px solid #667085;
+// margin-right: 20px;
+// padding:0em 6em 0em 6em;
+font-size: 14px;
+min-width: 100%;
+max-width: 100%;
+border-radius: 10px;
+}
+
+.learnBtn {
+    background-color: #4c259f;
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+    // padding: 0.3em 2em 0.3em 2em;
+    font-size: 16px;
+    min-width: 84%;
+    max-width: 50%;
+    border-radius: 4px;
+    padding:5px;
+    white-space: nowrap;
+  }
+  
+.ATCSecBgclr {
+
+
+}
+
+.blueBgClr {
+  background-color: #4C259F;
+
+}
+
+.darkBlueBgClr {
+  background-color: #122362;
+}
+
+.ATCtext1 {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.ATCtext2 {
+  font-size: 19px;
+  font-weight: 200;
+}
+
+.ATCtext3 {
+  font-size: 18px;
+  font-weight: 500;
+
+  padding: 0px 73px 0px 69px;
+}
+
+.ATCtext4 {
+  font-size: 15px;
+}
+
+.exploreCourseBtn {
+  color: #4C259F;
+  border: 0.1px solid #667085;
+  // margin-right: 20px;
+  // padding:0em 6em 0em 6em;
+  font-size: 14px;
+  min-width: 90%;
+  max-width: 90%;
+  border-radius: 10px;
+
+
+}
+
+.ATCbox {
+  padding: 2em 2em 2em 2em;
+}
+
+.applybtnATC {
+  background-color: #122362;
+  color: white;
+  // padding:0em 6em 0em 6em;
+  font-size: 14px;
+  min-width: 90%;
+  max-width: 90%;
+  border-radius: 10px;
+  padding:2px;
+}
+
+.applybtnATC:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+.hrsec1 {
+  height: 4px;
+  color: #4C259F;
+  opacity: 1.25;
+}
+.clm3textATC {
+  font-size: 18px;
+  font-weight: 500;
+
+}
+.submitBtn{
+  background-color: #4C259F;
+  color:white;
+  min-width:30%;
+  max-width:40%;
+  border-radius: 8px;
+}
+.submitBtn:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.border-end {
+  border-right: 1.5px solid #1f62a5 !important;
+  margin-right: 25px;
+}
+.medicardBgClr {
+
+  background-image: linear-gradient(to bottom right, #FFFFFF, #e9f3fc);
+}
+
+.medicardText {
+  line-height: 1.8em;
+
+}
+
+
+.btnenroll{
+  background-color:#4C259F;
+   color:white
+}
+
+
+.btnenroll:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+
+.medicardBtn {
+  border: none;
+  background-color: #4C259F;
+  color: white;
+  border-radius: 10px;
+  width:8.5em;
+  padding: 0.8em;
+  font-size: 1.3em;
+}
+
+.medicardBtn:hover{
+  background-image: linear-gradient(to bottom left , #4c259f 35%, #a481ef 100%);
+}
+.submitBtn{
+  border: none;
+  background-color: #4C259F;
+  color: white;
+  border-radius: 10px;
+  width:8em;
+  padding: 0.3em;
+  font-size: 1.3em;
+}
+
+
+.bgGray{
+  background-color: #eeeeee;
+}
+
+
+  .financingCard{
+    // background-color: #f5f5f5;
+  }
+  .financingCard:hover{
+    background-color: rgb(108, 29, 235);
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom left,
+        #4C259F, rgb(169, 85, 247));
+    color: white !important;
+    margin-top: -15px;
+    transition: all ease 0.8s;
+  }
+  .financingCard:hover .learnBtn{
+    background-color: transparent;
+    border:0.1px solid white !important;
+    
+  }
+
+
+  .mat-button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+

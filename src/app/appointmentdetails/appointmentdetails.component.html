@@ -1,0 +1,137 @@
+<div class="container-fuild p-lg-5 p-sm-2 pt-5 " style="background-color: #F5F5F5;">
+    <p class="d-flex align-items-center px-lg-5 pt-5 mt-5 " routerLink="/page8">
+        <mat-icon routerLink="/page8">keyboard_arrow_left</mat-icon> Back
+    </p>
+
+    <div class="container pt-3">
+        <div class="row">
+            <!-- Your Appointment Details Start-->
+                <div class="col-12 col-md-12 col-lg-8 col-sm-12 mt-3 rounded-3" style="background-color: #ffffff; padding: 2%">   
+                    <p class="fs-4 p-2 mt-3 textHeading">Your Appointment Details</p>
+                    <div class="container-fluid mt-4 border shadow-sm mb-5 bg-body rounded rounded-3 " >
+                        <div class="row " >
+                            <div class="col-12 col-md-3 col-lg-3">
+                                <img class="mt-4" src={{dataAppointment.data?.treatmentType[0].image_url}} alt="" style="width: 100%;">
+                            </div>
+                            <div class="col-12 col-sm-9 col-md-9 col-lg-9 pr-lg-5 mr-lg-5">                                
+                            <p class="mt-4 fs-5 pt-1" style="font-weight:500;">{{dataAppointment.data?.treatmentType[0].treatment_name   || 'dd'}}</p>
+                            <p class="fs-6 textHeading1">{{AppointmentDate | date}} - {{dataAppointment.data.duration}} minutes</p>
+                            <p class="fs-6 textHeading1">Time: {{AppointmentTime}}</p>
+                            <div class="d-flex justify-content-start"> 
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <mat-icon class="goldStar  w-0 starIcon">star</mat-icon>
+                                <p class="fs-6 mx-2 pt-1" style="font-weight:500;">4.9</p>
+                                <p class="pt-1" style="color: #667085;">51 reviews</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6 d-flex">
+                                    <mat-icon style="color:#98A2B3"> location_on</mat-icon>
+                                    <p class="px-1" style="color: #667085;"> {{dataAppointment.data.city}} {{dataAppointment.data.state}} {{dataAppointment.data.country}} </p>
+                                </div>
+                                <div class="col-12 col-sm-2 col-md-2 col-lg-2"></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class=" p-1">
+                        <p class="fs-5 textHeading">Enter your personal details</p>
+                        <p class="" style="color: #667085;">Provide your personal details and treatment information.</p>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col ">
+                        <label for="" class="form-label">First Name</label>
+                        <!-- <input type="text" class="form-control" placeholder="First name" aria-label="First "> -->
+                        <mat-form-field appearance="outline" class="w-100">
+                            <input matInput placeholder="First name">
+                        </mat-form-field>
+                        </div>
+                        <div class="col">
+                        <label for="" class="form-label">Last Name</label>
+                        <!-- <input type="text" class="form-control" placeholder="Last name" aria-label="Last"> -->
+                        <mat-form-field appearance="outline" class="w-100">
+                            <input matInput placeholder="Last name">
+                        </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class=" ">
+                            <label for="" class="form-label">Email address</label>
+                            <mat-form-field appearance="outline"  class="w-100">
+                                <input matInput placeholder="email@gmail.com" type="mail">
+                                <mat-icon matPrefix>mail_outline</mat-icon>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class=" p-1">
+                        <p class="fs-5 mt-2 textHeading">Treatment Areas</p>
+                        <div class="row">
+                            <div class="col-6 md-4 mt-4">
+                                <p  class="textSubheading">Areas treated with botox/dysport</p>
+                            </div>
+                            <div class="col-6 md-4 mt-4 d-flex ">
+                                <p style="color:#4C259F"><u>View Treatment Areas</u></p>
+                                <mat-icon style="color:#4C259F">keyboard_arrow_down</mat-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div  class=" p-1">
+                        <p class="fs-5 mt-2 textHeading">Full Face Photo</p>
+                        <p class="" style="color: #667085;">
+                            Please provide a full face picture, at your discretion, this will allow our team to 
+                            conduct an assessment to determine the best treatments for you.
+                        </p>
+                    </div>
+                    <div class=" p-1 ">
+                        <p  class="textSubheading">Include a message*</p>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows=""></textarea>
+                    </div>
+                </div>
+<!-- 
+                <div class="col-12 col-md-4 col-lg-4 col-sm-4 mt-3 rounded-3 "  style="background-color: #ffffff; padding: 2%">
+                    <p class="fs-3"> Summary</p>
+                </div> -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 mt-3" >
+                    <div class="rounded-3 p-5" style="background-color: #ffffff; ">
+                        <p class="fs-2  fw-bold ">Summary</p>
+                        <div class="pt-4 d-flex justify-content-between">
+                            <p>Botox/dysport (desposit)</p>
+                            <p>$150.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p>Applicable credits</p>
+                            <p>$0.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between">    
+                            <p>Subtotal</p>
+                            <p>$150.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between">    
+                            <p>Tax</p>
+                            <p>$7.50</p>
+                        </div>
+                        <div class="fs-4 pt-5 d-flex justify-content-between">
+                            <p>Due Today</p>
+                            <p class="text-primary">$157.50</p>
+                        </div>
+                        <button mat-button 
+                        class="btn btn-lg btnBlue rounded-3 my-5 fs-5 w-100 text-white py-lg-2" 
+                        style="white-space: break-spaces"
+                        routerLink="/payment">
+                            Continue To Payment
+                    </button>
+                        <small class="py-5">
+                            <span class="fw-bold"> Important notice: </span> this deposit is non-refundable. If you do not show up/ or cancel this appointment, you agree to forfeit your deposit.
+
+                        </small>
+                    </div>
+                </div>
+           <!-- Your Appointment Details End   -->
+        </div>
+    </div>
+</div>

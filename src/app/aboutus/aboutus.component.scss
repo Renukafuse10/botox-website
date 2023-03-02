@@ -1,0 +1,155 @@
+.herosSection{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.4)) , url("../../assets/the-botox-course-team.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+// .overlay {
+//     background: rgb(0, 0, 0);
+//     background: rgba(0, 0, 0, 0.5); /* Black see-through */
+//     width: 100%;
+//     transition: .5s ease;
+//     height: 100%;
+//   }
+
+.textheading{
+    // margin-top: -18%;
+    font-size: 48px;
+    color: #4C259F;
+    font-weight: 600;
+}
+
+.hrLine{
+    height: 4px;
+    // color: #4C259F;
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+
+    opacity: 1.25;
+}
+
+.textgradient {
+    background: linear-gradient(to right, #8161C6 0%, #4C259F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 600;
+    // margin-top: -18%;
+  }
+
+.headBlue{
+    color: #122362;
+    font-weight: 900;
+  }
+
+  
+.textBlue{
+    color: #122362;
+    // font-weight: 500;    
+  }
+
+.textColor{
+    color: #4C259F;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    font-weight: 500;
+}
+
+.textChcekOut{
+    color: #4B5563;
+}
+
+.ourTeamHeading{
+    font-weight: 500;
+}
+
+.ourTeamPara{
+    font-size: 18px;
+}
+
+.btnVisitWebsite{
+    border-radius :  8px;
+}
+
+.ourTeamLeftImg{
+    max-width: 100%;
+    min-width: 12%;
+    max-height: 100%;
+    min-height: 12%;
+
+}
+
+.ourTeamRightImg{
+    max-width: 100%;
+    min-width: 12%;
+    max-height: 100%;
+    min-height: 12%;
+    
+}
+
+
+
+.btnplay {
+    width: 12%;
+    
+
+}
+.imgfellow{
+    position: absolute;
+    z-index: -1;
+}
+
+.hoverEffect {
+    background-color: rgb(47, 45, 45);
+    min-height: 81%;
+   height:90%;
+    opacity: 0.2;
+}
+
+// .hoverEffect:hover {
+//     opacity: 0.6;
+   
+// }
+// .fellowshipeffect:hover .btnplay{
+//     width: 14%;
+//     transition: all ease 0.7s;
+
+.border-start {
+    border-left: 4px solid #8e8e8e!important;
+}
+// }
+
+
+
+
+.fellowshipPrgmImg{
+    opacity:0.8;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    border-radius: 2px;
+    object-fit: cover;
+    object-position: center;
+    width:100%;
+  }
+ 
+  .matIconPlay{
+    position: absolute;
+    z-index: 1;
+    
+  }
+  .playIcon{
+   width:10%;
+  
+  }
+  .opacityclass:hover .fellowshipPrgmImg{
+    opacity: 0.5;
+    filter: none;
+  }
+  .opacityclass:hover .playIcon{
+    width:13%;
+    transition-timing-function: cubic-bezier(.25, .25, .75, .75);
+    transition-duration: 0.3s;
+  }
+  
